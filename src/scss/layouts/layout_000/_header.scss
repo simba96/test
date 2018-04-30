@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  flex-direction: column;
+ margin-top: rem(100px);
+  align-items: center;
+
+  @include e(txt){
+    margin-bottom: rem(20px);
+    border: rem(2px) solid #ccc;
+    outline: none;
+    width: rem(110px);
+    height: rem(20px);
+    padding-left: rem10px();
+  }
+  @include e(dropbtn) {
+    background-color: lightseagreen;
+    color: white;
+    padding: rem(10px) rem(40px);
+    border-radius: rem(25px);
+    border: rem(2px) solid #2980B9;
+
+    //margin-right: 60px;
+    font-size: rem(16px);
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: #2980B9;
+      transition: all .7s;
+    }
+  }
+  @include e(dropdown) {
+    position: relative;
+    display: inline-block;
+
+  }
+  @include e(dropdown-content) {
+    display: none;
+    margin-top: rem(20px);
+    height: rem(190px);
+    margin-left: rem(17px);
+    background-color: #696969;
+    width: rem(120px);
+    overflow: auto;
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+    padding-top: rem(10px);
+    box-shadow: 0 0 rem(10px) rem(5px) rgba(221, 221, 221, 1);
+    z-index: 1;
+    &:before{
+      content: '';
+      height: 0;
+      width: 0;
+      border-right: rem(12px) solid transparent;
+      border-left: rem(12px) solid transparent;
+      border-bottom: rem(11px) solid #696969;
+      position: absolute;
+      margin-top: rem(-21px);
+      margin-left: rem(40px);
+      //top: -30px;
+      z-index: 1000;
+    }
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+    li {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: rem(5px);
+      &:first-child {
+        border-top: rem(1px) solid #ccc;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+    @include e(item){
+      text-decoration: none;
+      color: white;
+      font-size: rem(15px);
+      font-weight: 400;
+      &:hover {
+        color: lightblue;
+      }
+    }
+
+}
+.show {
+  display:block;
+}
+ .disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #888;
+}
+
+.active{
+  color: blue;
+}
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body >
+<div class=" container">
+<main class="main">
+    <input class="main__txt" type="text" id="txt" />
+<div class="main__dropdown">
+<button onclick="myFunction()" class="main__dropbtn">Button</button>
+<ul id="list" class="main__dropdown-content" >
+<li><a class="main__item " href="#">Item 1</a></li>
+<li><a class="main__item" href="#">Iitem activ</a></li>
+<li><a class="main__item" href="#">Itrem hover</a></li>
+<li><a class="main__item disabled " href="#">Item disable</a></li>
+<li><a class="main__item" href="#">Item 5</a></li>
+<li><a class="main__item disabled " href="#">Item 6</a></li>
+</ul>
+
+</div>
+
+</main>
+</div><!--top-box-->
+<script src="js/app.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<title>Add New Option</title>-->
+<!--<meta charset="windows-1252">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<select id="select">-->
+<!--<option value="java">Java</option>-->
+<!--<option value="c#">C#</option>-->
+<!--</select>-->
+<!--<input onclick="insertValue();" type="text" id="val">-->
+<!--&lt;!&ndash;<button onclick="insertValue();">Add</button>&ndash;&gt;-->
+
+<!--<script>-->
+
+<!--function insertValue()-->
+<!--{-->
+<!--var select = document.getElementById("select"),-->
+<!--txtVal = document.getElementById("val").value,-->
+<!--newOption = document.createElement("OPTION"),-->
+<!--newOptionVal = document.createTextNode(txtVal);-->
+
+<!--newOption.appendChild(newOptionVal);-->
+<!--select.insertBefore(newOption,select.firstChild);-->
+<!--}-->
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<title>Javascript: get selected li from ul</title>-->
+    <!--<meta charset="windows-1252">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--</head>-->
+<!--<style>-->
+    <!--a.disabled{-->
+        <!--pointer-events: none;-->
+        <!--cursor: default;-->
+        <!--color: #888;-->
+    <!--}-->
+<!--</style>-->
+<!--<body>-->
+
+<!--<input type="text" id="txt">-->
+
+<!--<ul id="list">-->
+    <!--<li><a href="#">JS</a></li>-->
+    <!--<li><a href="#">PHP</a></li>-->
+    <!--<li><a href="#" class="disabled">Java</a></li>-->
+    <!--<li><a href="#">C#</a></li>-->
+    <!--<li><a href="#">HTML</a></li>-->
+    <!--<li><a href="#" class="disabled">CSS</a></li>-->
+<!--</ul>-->
+
+<!--<script>-->
+
+    <!--var items = document.querySelectorAll("#list a");-->
+
+    <!--for(var i = 0; i < items.length; i++)-->
+    <!--{-->
+        <!--items[i].onclick = function(){-->
+
+            <!--document.getElementById("txt").value = this.innerHTML;-->
+
+        <!--};-->
+    <!--}-->
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
